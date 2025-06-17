@@ -13,3 +13,8 @@ The stack design for this agent includes the following components.  It is design
 - [Data Service](./data-service/) - This project is written in TypeScript and creates a REST API that services queries to the LancdDB.
 
 - [Agent](./agent) - This project is written in C# and creates a Agent with Semantic Kernel (and the Agent Framework) and will accept prompts, use a plugin to call the data service as needed.
+
+```mermaid
+flowchart LR
+  Generate --> Parse-Embed-Import --> Expose-DB --> Agent
+```
