@@ -1,0 +1,28 @@
+{
+  "name": "data-generator",
+  "version": "1.0.0",
+  "description": "Generate sample 10-K financial data for testing purposes.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ./",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Cale Teeter",
+    "email": "caleteeter@hotmail.com"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "faker": "^5.5.3",
+    "jspdf": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/faker": "^5.5.3",
+    "@types/node": "^24.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

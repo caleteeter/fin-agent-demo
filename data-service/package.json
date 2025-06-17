@@ -1,0 +1,31 @@
+{
+  "name": "data-service",
+  "version": "1.0.0",
+  "description": "This is a data service that provides an API for managing data.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ./",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "author": {
+    "name": "Cale Teeter",
+    "email": "cale.teeter@microsoft.com"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@lancedb/lancedb": "^0.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "openai": "^5.5.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

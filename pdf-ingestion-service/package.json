@@ -1,0 +1,30 @@
+{
+  "name": "pdf-ingestion-service",
+  "version": "1.0.0",
+  "description": "A service to ingest PDF files into a LanceDB database",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ./",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "author": {
+    "name": "Cale Teeter",
+    "email": "cale.teeter@microsoft.com"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@lancedb/lancedb": "^0.20.0",
+    "dotenv": "^16.5.0",
+    "openai": "^5.5.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.0.3",
+    "@types/pdf-parse": "^1.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
